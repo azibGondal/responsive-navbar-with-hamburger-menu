@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My responive navbar</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="resposivenavbar.css">
+
+</head>
+<body>
+    <nav id="navbar">
+        <i class="fa fa-bars" id="toogle" ></i>
+        <div id="container">
+            <div id="logo">
+                    <h1 id="heading"> SpaceX</h1>
+            </div>
+            <div id="ul-section" class="pp">
+                <ul id="ulp">
+                    <li class="navbarlinks"><a href="#">Home</a></li>
+                    <li class="navbarlinks"><a href="#">AboutUs</a></li>
+                    <li class="navbarlinks"><a href="#">OurServices</a></li>
+                    <li class="navbarlinks"><a href="#">ContactUs</a></li>
+                    <li class="navbarlinks"><a href="#">Feedback</a></li>
+
+                </ul>
+                
+            </div>
+           
+        </div>
+
+    </nav>
+    <script>
+      let tgl = document.getElementById('toogle');
+     
+
+      tgl.addEventListener("click",function (){
+        let opa = document.getElementById('ul-section');
+        
+       
+        opa.style.transition = "all 1s ease-out";
+
+        opa.classList.toggle("pp")
+
+        
+
+      })
+    </script>
+</body>
+</html>
